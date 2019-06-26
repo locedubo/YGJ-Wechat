@@ -1,0 +1,64 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+	<view class="userinfo">
+		<image wx:if="{{userInfo && userInfo.avatarUrl}}" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+		<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+	</view>
+  <view class="asset">
+    <view class='item' bindtap='goAsset'>
+      <view>{{balance}}</view>
+      <view>可用余额</view>
+    </view>
+    <view class='item right' bindtap='goScore'>
+      <view>{{score}}</view>
+      <view>我的积分</view>
+    </view>
+  </view>
+
+  <view style="height:7rpx;background: #eee;width:100%;"></view>
+  <view class='share'>
+    <navigator url='/pages/xinshou/xinshou' hover-class="none">
+      <image src='/images/xinshou.jpg' class='share_img' />
+    </navigator>
+  </view>
+  <view style="height:7rpx;background: #eee;width:100%;"></view>
+
+  <view class="my-item">
+    <navigator url="/pages/order-list/index" hover-class="navigator-hover">我的订单</navigator>
+  </view>
+  <view class='order-shortcut'>
+    <view class='item' bindtap='goOrder' data-type="0">
+      <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
+      <view class='text'>待付款</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="1">
+      <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
+      <view class='text'>待发货</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="2">
+      <image class="icon" src="/images/order/shouhuo.png" background-size="cover"></image>
+      <view class='text'>待收货</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="3">
+      <image class="icon" src="/images/order/pj.png" background-size="cover"></image>
+      <view class='text'>待评价</view>
+    </view>
+  </view>
+
+  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <view class="my-item">
+    <navigator url="/pages/my/my" hover-class="navigator-hover">优惠券</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/address/address" hover-class="navigator-hover">收获地址</navigator>
+  </view>
+  <view class="my-item">
+    <navigator bindtap='onMapLocation' hover-class="navigator-hover">门店地址</navigator>
+  </view>
+  <view class="my-item">
+    <navigator bindtap='onPhone' hover-class="navigator-hover">客服电话</navigator>
+  </view>
+  
+
+
+</view>

@@ -1,0 +1,24 @@
+<!--pages/xinshou/xinshou.wxml-->
+<view class='content'>
+    <image src="../../images/yaoqin_02.jpg" class='InImg'  mode="widthFix"></image>
+    <image src='../../images/inback_02.jpg' class='Inback'  mode="widthFix"></image>
+    <text class='text' bindtap='btnLayer'>活动规则</text>
+    <button class='btn'  open-type="share">立即邀请好友</button>
+</view>
+
+<view class='back' wx:if="{{backshow}}" animation="{{animationBack}}" catchtouchmove='ture'></view>
+<view class='layer' wx:if="{{layershow}}" animation="{{animationData}}" catchtouchmove='ture'>
+    <text class='iconfont icon-guanbi1 layericon' bindtap="closeLayer"></text>
+    <view class='layer_h1'><text class='layer_border'>规则</text></view>
+    <view  class='layer_scroll'>
+    <scroll-view
+    scroll-y
+    style="height:700rpx;"
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    bindscroll="scroll">
+    用户可通过本页分享给好友，好友成功注册为微会员和成功入住，用户都会获得相应优惠券，优惠券可在入住时直接抵扣现金
+  </scroll-view>
+  </view>
+</view>
+

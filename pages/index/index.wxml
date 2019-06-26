@@ -1,0 +1,102 @@
+<!--index.wxml-->
+<view class="swiper-container">
+  <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" width="1920rpx" height="350rpx" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots">
+    <block wx:for="{{banners}}" wx:key="unique">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+</view>
+
+<view class='Ix_menu'>
+    <navigator url='#' hover-class="none">
+        <view class='Ixlist'>
+            <view class='IxIcon IxIcon1'>
+              <image bindtap="tapBanner" src="/images/index/123.PNG" class="slide-image" w />
+            </view>
+            <view>关于玉升</view>
+        </view>
+    </navigator>
+    <navigator url='#' hover-class="none">
+        <view class='Ixlist' wx:if="{{canIUse}}"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+            <view class='IxIcon IxIcon2'><icon class='iconfont icon-qiandao'></icon></view>
+            <view>签到有礼</view>
+        </view>
+    </navigator>
+    <navigator url='#' hover-class="none">
+        <view class='Ixlist'>
+            <view class='IxIcon IxIcon3'><icon class='iconfont icon-youhuiquan1'></icon></view>
+            <view>领券中心</view>
+        </view>
+    </navigator>
+    <navigator url='#' hover-class="none">
+        <view class='Ixlist'>
+            <view class='IxIcon IxIcon4'><icon class='iconfont icon-yaoqing1'></icon></view>
+            <view>邀请好友</view>
+        </view>
+    </navigator>
+</view>
+
+<!-- <view class="weui-loadmore weui-loadmore_line">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">维修服务</view>
+</view> -->
+
+<!-- <view class="goods-container">
+    <view class="weixiu-box" wx:for-items="{{goodsRecommend}}" wx:key="*this" bindtap="toDetailsTap" data-id="{{item.id}}">
+      <view class="img-box">
+        <image src="{{item.pic}}" class="image" mode="aspectFill" lazy-load="true" />
+      </view>
+    </view>
+  </view> -->
+
+<!-- 带有价格 -->
+<!-- <view class='list'>
+  <view class='list_left'><image src="/images/goods/2.jpg" class='list_img'></image></view>
+  <view class='list_right'>
+      <view class='list_h1'>家电维修</view>
+      <view class='list_sm'>冰箱，空调</view>
+      <view class='list_Price'>价格<text class='list_Price_no'></text></view>
+      <view class='list_po'>
+          <navigator url='#' hover-class="none">
+                <view class='list_btn list_btn1'>在线预约</view>
+                </navigator>
+      </view>
+  </view>
+</view> -->
+
+<view class='list'>
+  <view class='list_left'><image src="/images/goods/2.jpg" class='list_img'></image></view>
+  <view class='list_right'>
+      <view class='list_h1'>生活服务</view>
+      <view class='list_sm'>家电维修，月嫂服务等等</view>
+      <view class='list_Price'>定金￥50<text class='list_Price_no'></text></view>
+      <view class='list_po'>
+          <navigator url='/pages/weixiuYuyue/weixiuYuyue' hover-class="none">
+                <view class='list_btn list_btn1'>预约</view>
+                </navigator>
+      </view>
+  </view>
+</view>
+
+<view class="weui-loadmore weui-loadmore_line">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">商品列表</view>
+</view>
+
+ <view class="goods-container">
+    <view class="goods-box" wx:for-items="{{goods}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
+      <view class="img-box">
+        <image src="{{item.pic}}" class="image" mode="aspectFill" lazy-load="true" />
+      </view>
+      <view class="goods-title">{{item.name}}</view>
+      <view style='display:flex;'>
+        <view class="goods-price">¥ {{item.minPrice}}</view>
+        <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price" style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
+      </view>
+    </view>
+  </view>

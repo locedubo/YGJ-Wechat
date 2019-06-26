@@ -1,0 +1,24 @@
+/* pages/xinshou/xinshou.wxss */
+
+page{height: 100%; background:#ff6b49;}
+.content{ height:100%; overflow: hidden; position:relative;}
+.InImg{ width:100%; display: block;}
+.Inback{ position: absolute; bottom:0; width:100%; left:0; z-index:997}
+.text{ position: absolute; right:0; top:50rpx; color:#fff; font-size:26rpx; padding:10rpx 20rpx; background:#f7481f;border-bottom-left-radius:100rpx; border-top-left-radius:100rpx;}
+.btn{z-index:998; position: absolute; bottom:70rpx; left:10%; width:80%; padding:5rpx 0; font-weight: bold; font-size:36rpx; color:#f7481f; text-shadow: 0 3rpx 0 #fff;
+border-bottom-left-radius:100rpx; border-top-left-radius:100rpx; border-bottom-right-radius:100rpx; border-top-right-radius:100rpx; 
+background: -webkit-linear-gradient(-45deg,#fffa6f, #fff723);
+background: -o-linear-gradient(-45deg,#fffa6f, #fff723);
+background: -moz-linear-gradient(-45deg,#fffa6f, #fff723);
+background: linear-gradient(to -45deg,#fffa6f, #fff723); 
+box-shadow: 0 2px 8px #ff6c49;
+}
+.back{ position:fixed; opacity: 0; width:100%; top:0; left:0; height:100%; background:rgba(0,0,0,0.5); z-index: 998}
+.layer{ opacity: 0; background:#fff; position: fixed; top:50%; left:50%; margin-top:-65%; margin-left:-45%; width:90%; height:80%; z-index: 999}
+/* transform:scale(0); */
+.layericon{ position: absolute; top:45rpx; right:30rpx; font-size:40rpx; color:#ccc;}
+.layer_h1{ margin:30rpx; font-size:28rpx; color:#ff6b49;}
+.layer_border{ display: inline-block;  line-height: 80rpx; border-bottom:5rpx solid #ff6b49;}
+.layer_scroll{ padding:30rpx; font-size:26rpx; color:#666; line-height: 50rpx;}
+.root{top:0;left:0;width:100%;height:100%; overflow: hidden; position:fixed;z-index: 0;}
+

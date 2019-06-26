@@ -1,0 +1,216 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.swiper-container{
+  width: 750rpx;
+  position: relative;  
+}
+.swiper_box {
+  width: 750rpx;
+  height:250rpx;
+}
+
+swiper-item image {
+  width: 750rpx;
+  height:250rpx;
+}
+.swiper-container .dots{  
+  position: absolute;  
+  left: 0;  
+  right: 0;  
+  bottom: 20rpx;  
+  display: flex;  
+  justify-content: center;  
+}  
+.swiper-container .dots .dot{  
+  margin: 0 8rpx;  
+  width: 14rpx;  
+  height: 14rpx;  
+  background: #fff;  
+  border-radius: 50%;  
+  transition: all .6s;  
+  opacity: .5;
+}  
+.swiper-container .dots .dot.active{  
+  width: 14rpx;  
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.type-item-on{
+  color:#e64340;
+  border-bottom: 1rpx solid #e64340;
+}
+
+.weui-loadmore {
+  margin-bottom: 0px;
+}
+
+.goods-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+  background-color: #F2f2f2;
+}
+.goods-box{
+  width: 339rpx;
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.goods-box .img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+.goods-box .img-box image{
+   width: 339rpx;
+   height: 339rpx;
+}
+.goods-box .goods-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.goods-box .goods-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color:#e64340;
+  margin-left: 24rpx;
+}
+.no-more-goods{
+  text-align: center;
+  font-size: 24rpx;
+  padding-bottom:48rpx; 
+  color: #999;
+}
+.weixiu-box{
+  width: 339rpx;
+  height: 339rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.weixiu-box .img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+.weixiu-box .img-box image{
+   width: 339rpx;
+   height: 339rpx;
+}
+
+
+
+
+
+
+.content{ overflow: hidden; padding-top:95rpx;}
+.list{ height:220rpx; position: relative; font-size:28rpx; color:#666; margin: 30rpx; background:#fff; position: relative; border-bottom-left-radius:15rpx; border-top-left-radius:15rpx; border-bottom-right-radius:15rpx; border-top-right-radius:15rpx; box-shadow: 0 2rpx 18rpx #f0f0f0;}
+.list_left{ background:#fff; position: absolute; left:25rpx; top:25rpx;}
+.list_img{ width:160rpx; height:160rpx; display: block;}
+.list_Price{ margin-top:25rpx;color:#ff6b49; font-size:32rpx; font-weight: bold;}
+.list_right{margin-left:210rpx; padding-top:20rpx;}
+.list_h1{ font-size:32rpx; color:#000;}
+.list_sm{ margin-top:15rpx;}
+.list_po{  position: absolute; top:80rpx; right:25rpx; }
+.list_po2{  position: absolute; top:40rpx; right:25rpx;   }
+.list_btn{ margin-bottom:10rpx; text-align: center; line-height: 65rpx; height:65rpx;font-size:26rpx;outline: none; width:120rpx; display:block; color:#fff;
+border-bottom-left-radius:90rpx; border-top-left-radius:90rpx; border-bottom-right-radius:90rpx; border-top-right-radius:90rpx;}
+.list_btn1{
+background: -webkit-linear-gradient(-45deg,#ff6b64, #fd3329);
+background: -o-linear-gradient(-45deg,#ff6b64, #fd3329);
+background: -moz-linear-gradient(-45deg,#ff6b64, #fd3329);
+background: linear-gradient(to -45deg,#ff6b64, #fd3329); 
+box-shadow: 0 2px 8px #ffbbb7;
+}
+.list_btn2{ background:#ccc;}
+.list_btn3{ border: 2rpx solid #fd3329; box-sizing: border-box; background:#fff; line-height: 65rpx; color:#fd3329;}
+.list_btn3 .iconfont{ vertical-align: middle; display: inline-block; font-size:35rpx; margin-top:-1rpx;}
+.list_Price{ margin-top:15rpx;}
+
+.list_Price_no{ margin-left:20rpx;font-weight:normal;font-size:26rpx; color:#aaa;text-decoration:line-through}
+
+.loading{ margin: 30rpx; text-align: center; margin-top:0; font-size:30rpx; color:#999;}
+.loading_img{ vertical-align:middle; margin-right:10rpx; margin-top:-2rpx; display: inline-block; width:30rpx;}
+.listMax{ margin: 30rpx; padding-bottom:15rpx; text-align: center; margin-top:0;font-size:30rpx; color:#999;}
+.list_title3{ font-size:32rpx; color:#000;}
+.list_text{ margin-top:25rpx;}
+
+
+
+
+/* 中间主按钮 */
+.Ix_menu{ overflow: hidden; margin:10rpx; padding:35rpx 0;}
+.Ixlist{ float: left; width:25%; font-size:26rpx; text-align: center; color:#555;}
+.IxIcon{ margin-bottom:15rpx; width:100rpx; height:100rpx; line-height: 100rpx; color:#fff; background:#ccc; display:inline-block;border-bottom-left-radius:100%; border-top-left-radius:100%; border-bottom-right-radius:100%; border-top-right-radius:100%;
+background: -webkit-linear-gradient(-45deg,#fe7a5c, #fc4e26);
+background: -o-linear-gradient(-45deg,#fe7a5c, #fc4e26);
+background: -moz-linear-gradient(-45deg,#fe7a5c, #fc4e26);
+background: linear-gradient(to -45deg,#fe7a5c, #fc4e26); }
+.IxIcon1{background: -webkit-linear-gradient(-45deg,#94c9f5, #62aaf5);
+background: -o-linear-gradient(-45deg,#94c9f5, #62aaf5);
+background: -moz-linear-gradient(-45deg,#94c9f5, #62aaf5);
+background: linear-gradient(to -45deg,#94c9f5, #62aaf5); }
+.IxIcon2{background: -webkit-linear-gradient(-45deg,#fedc57, #f5b73d);
+background: -o-linear-gradient(-45deg,#fedc57, #f5b73d);
+background: -moz-linear-gradient(-45deg,#fedc57, #f5b73d);
+background: linear-gradient(to -45deg,#fedc57, #f5b73d); }
+.IxIcon3{background: -webkit-linear-gradient(-45deg,#88e78b, #2bd56f);
+background: -o-linear-gradient(-45deg,#88e78b, #2bd56f);
+background: -moz-linear-gradient(-45deg,#88e78b, #2bd56f);
+background: linear-gradient(to -45deg,#88e78b, #2bd56f); }
+.IxIcon4{background: -webkit-linear-gradient(-45deg,#fe8468, #f46443);
+background: -o-linear-gradient(-45deg,#fe8468, #f46443);
+background: -moz-linear-gradient(-45deg,#fe8468, #f46443);
+background: linear-gradient(to -45deg,#fe8468, #f46443); }
+.IxIcon1 .iconfont{ font-size:50rpx; display:inline; text-shadow: 0 2rpx 6rpx #57a2f1}
+.IxIcon2 .iconfont{ font-size:50rpx; display:inline; text-shadow: 0 2rpx 6rpx #f1c326}
+.IxIcon3 .iconfont{ font-size:50rpx; display:inline; text-shadow: 0 2rpx 6rpx #2ed778}
+.IxIcon4 .iconfont{ font-size:50rpx; display:inline; text-shadow: 0 2rpx 6rpx #f46443}
+
+.icon-haoyou{
+  background: url(/images/index/123.PNG) no-repeat 750rpx center;
+}
+
+.IxIcon image{ 
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
